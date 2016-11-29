@@ -1,0 +1,172 @@
+/*----------------------------------------------------------------------------------*/
+/*------------------------------RESET DEFAULT STYLES--------------------------------*/
+/*----------------------------------------------------------------------------------*/
+html,body                       { width:100%; height:100%; }
+body                            { padding:0; margin:0; background:#fff; color:#000; }
+div,menu,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,fieldset,legend,label,select,input,textarea,button {
+	padding:0;
+	margin:0;
+	outline:none;
+	list-style:none;
+}
+button                         { cursor: pointer; padding: 0 }
+select, input, textarea,button { font:12px Tahoma, sans-serif; vertical-align:middle; }
+textarea                       { vertical-align:top; }
+:focus                         { outline:none; }
+input[type=submit]             { cursor:pointer; }
+img, fieldset                  { border:0; }
+img                            { vertical-align: top; }
+table                          { border-collapse:collapse; border-spacing:0; }
+/*a:link, a:visited              { !*font:12px Tahoma, sans-serif;*! color:#000; text-decoration:underline; }*/
+a:hover                        { text-decoration:none; }
+a {
+	text-decoration: none;
+	transition: 0.3s all ease-out;
+}
+
+.float-r           	           { float:right !important; }
+.float-l                       { float:left !important; }
+.overflow                      { overflow: hidden}
+
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------FONTS----------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+
+@font-face {
+	font-family: "Bold";
+	src: url('../fonts/OpenSans-Bold.ttf') format('truetype');
+}
+
+/*@font-face {
+	font-family: "Light";
+	src: url('../fonts/OpenSans-Light.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: "Regular";
+	src: url('../fonts/OpenSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: "ExtraBold";
+	src: url('../fonts/OpenSans-ExtraBold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: "Italic";
+	src: url('../fonts/OpenSans-Italic.ttf') format('truetype');
+}*/
+
+@font-face {
+	font-family: "SemiBold";
+	src: url('../fonts/OpenSans-Semibold.ttf') format('truetype');
+}*/
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------WRAPPER--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/*header{
+	padding-top: 100px;
+}*/
+/*высота страницы минус высота футера*/
+
+body {
+	 padding-top: 220px;
+}
+	.wrapper {
+ min-height: calc(100% - 320px);
+}
+.wrapper::after {
+	content: "";
+}
+footer {
+	width: 100%;
+	height: 320px;
+	background: #404040;
+}
+section{
+	text-align: center;
+}
+.welcome-section {
+	position: relative;
+	height: 100vh;
+	background: url("../images/header-background.jpg") center no-repeat;
+ background-size: cover;
+}
+.container-top {
+	max-width: 1500px;
+	width: 100%;
+}
+header {
+ padding-top: 38px;
+}
+ .logo {
+
+}
+.nav {
+
+}
+.select-boat li {
+	 display: inline-block;
+	 font-family: "Raleway", "Ariel", sana-serif;
+ 	font-size: 16px;
+ 	color: #f3f5fd;
+}
+nav .menu-btn {
+	 display: inline-block;
+	 font-family: "Raleway", "Ariel", sana-serif;
+ 	font-size: 16px;
+ 	color: #f3f5fd;
+	padding: 10px 41px;
+	background: transparent;
+	border: 1px solid #f3f5fd;
+	text-transform: uppercase;
+}
+.select-boat li a {
+	font-family: "Raleway", "Ariel", sana-serif;
+	font-size: 16px;
+	color: #f3f5fd;
+	text-transform: uppercase;
+	margin-right: 40px;
+	margin-right: 32px;
+}
+.block-reserv {
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	transform: translateX(-50%);
+
+}
+.block-reserv .title {
+	width: 900px;
+	font-family: "Raleway", "Ariel", sana-serif;
+	font-size: 72px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #f3f5fd;
+}
+.block-reserv p {
+	font-family: "Open Sans", "Ariel", sana-serif;
+	font-size: 30px;
+	font-weight: 400;
+	color: #f3f5fd;
+	width: 900px;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 1300px){
+	.container-top {
+		padding: 0 10px;
+	}
+}
