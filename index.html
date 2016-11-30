@@ -24,8 +24,10 @@
           <h1 class="logo float-l">
             <img src="images/logo.png" width="166" height="33" alt="sail">
           </h1>
-          <nav class="float-r">
-            <button class="menu-button"><i class="icon-menu"></i></button>
+          <nav class="main-menu float-r">
+            <button class="menu-button">
+              <div class="icon-menu"></div>
+            </button>
             <ul class="select-boat">
               <li><a href="#">Top destinations</a></li>
               <li><a href="#">Add your boat</a></li>
@@ -44,11 +46,55 @@
           <button type="submit">Find a boat</button>
         </form>
       </div>
+      <ul class="base-prices">
+        <li class="s-3">
+          <div class="item-price">
+            <div class="price">2,300</div>
+            <div class="name-price">Destinations</div>
+          </div>
+        </li>
+        <li class="s-3">
+          <div class="item-price">
+            <div class="price">1,000</div>
+            <div class="name-price">Cities</div>
+          </div>
+        </li>
+        <li class="s-3">
+          <div class="item-price">
+            <div class="price">35,000</div>
+            <div class="name-price">Boats</div>
+          </div>
+        </li>
+        <li class="s-3">
+          <div class="item-price">
+            <div class="price">50,000</div>
+            <div class="name-price">Sailors</div>
+          </div>
+        </li>
+      </ul>
     </section>
+    <div class="container middle">
+      <section class="top-destinations">
+        <h1>Explore our top destinations</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et</p>
+        <ul class="image-destination">
+          <li class="s-8"><img src="images/figueira.jpg" width="100%" alt=""></li>
+          <li class="s-4"><img src="images/ibiza.jpg" width="100%" alt=""></li>
+          <li class="s-4"><img src="images/mallorka.jpg" width="100%" alt=""></li>
+          <li class="s-4"><img src="images/portofino.jpg" width="100%" alt=""></li>
+          <li class="s-4"><img src="images/hercules.jpg" width="100%" alt=""></li>
+        </ul>
+      </section>
+    </div>
   </div>
   <footer>
     <div class="container overflow">
     </div>
   </footer>
+  <script type="text/javascript">
+  $(".menu-button").click(function() {
+     $(".main-menu ul").slideToggle();
+   });
+  </script>
 </body>
 </html>
