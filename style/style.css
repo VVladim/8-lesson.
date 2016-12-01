@@ -121,11 +121,7 @@ body {
 /*.wrapper::after {
 	content: "";
 }*/
-footer {
-	width: 100%;
-	height: 320px;
-	background: #404040;
-}
+
 section{
 	text-align: center;
 }
@@ -136,8 +132,10 @@ section{
  background-size: cover;
 }
 .container-top {
-	max-width: 1500px;
+	max-width: 1200px;
 	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
 }
 header {
  padding-top: 38px;
@@ -415,18 +413,34 @@ nav .menu-btn {
 	color: #343434;
 	margin-bottom: 5px;
 }
+@media (max-width: 550px){
+	.item-price .price {
+		font-size: 20px;
+	}
+}
 .item-price .name-price {
 	font-family: "Open Sans", "Ariel", sans-serif;
 	font-size: 18px;
   font-weight: 400;
 	color: #717171;
 }
+@media (max-width: 550px){
+	.item-price .name-price {
+		font-size: 12px;
+	}
+}
 .container {
 	max-width: 1170px;
-	width: 100%;
+	/*width: 100%;*/
 	margin-left: auto;
 	margin-right: auto;
 	min-height: 100px;
+}
+@media screen and (max-width: 970px){
+	.container {
+		padding-left: 5px;
+		padding-right: 5px;
+	}
 }
 middle {
 	background: #ffffff;
@@ -444,7 +458,7 @@ middle {
 .top-destinations p {
 	font-family: "Open Sans", "Ariel", sans-serif;
 	font-size: 16px;
-
+	margin-bottom: 5%;
 }
 .image-destination {
 	overflow: hidden;
@@ -454,8 +468,8 @@ middle {
     position: relative;
     max-height: 360px;
     overflow: hidden;
-    padding: 10px 10px;
-    margin-bottom: 10px;
+    padding: 1% 1%;
+    margin-bottom: 1%;
     border-radius: 20px;
 }
 
@@ -467,31 +481,339 @@ middle {
 .image-destination li:nth-child(2) .img-boat {
 	 padding-right: 0;
 }
-@media (max-width: 750px){
-	.image-destination li {
-		padding: 7px 7px;
-		margin-bottom: 7px;
+
+.top-destinations .btn {
+	 display: inline-block;
+	 font-family: "Raleway", "Ariel", sans-serif;
+	 font-size: 14px;
+	 font-weight: 700;
+	 text-transform: uppercase;
+	 color: #343434;
+	 border: 1px solid #bdbdbd;
+	 padding: 2% 4%;
+	 border-radius: 5px;
+	 margin-top: 5%;
+	 margin-bottom: 7%;
+}
+.own-boat {
+	position: relative;
+	/*height: 75vh;*/
+	background: url("../images/own-boat.jpg") center no-repeat;
+	background-size: cover;
+}
+.dark-glass {
+	position: relative;
+	height: 75vh;
+	background: url("../images/dark-glass.png") center no-repeat;
+	background-size: cover;
+}
+.dark-glass h1 {
+	font-family: "Raleway", "Ariel", sans-serif;
+	font-size: 72px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #f9fafe;
+	width:255vh;
+}
+@media screen and (max-width: 970px){
+	.dark-glass h1 {
+		font-size: 50px;
 	}
 }
-@media (max-width: 550px){
-	.image-destination li {
-		padding: 5px 5px;
-		margin-bottom: 5px;
-	}
-	@media (max-width: 370px){
-		.image-destination li {
-			padding: 3px 3px;
-			margin-bottom: 3px;
-		}
+@media screen and (max-width: 750px){
+	.dark-glass h1 {
+		font-size: 40px;
 	}
 }
+@media screen and (max-width: 550px){
+	.dark-glass h1 {
+		font-size: 20px;
+	}
+}
+.dark-glass p {
+	font-family: "Open Sans", "Ariel", sans-serif;
+	font-size: 30px;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: #f9fafe;
+}
+@media screen and (max-width: 970px){
+	.dark-glass p {
+		font-size: 24px;
+	}
+}
+@media screen and (max-width: 750px){
+	.dark-glass p {
+		font-size: 18px;
+	}
+}
+@media screen and (max-width: 550px){
+	.dark-glass p {
+		font-size: 8px;
+	}
+}
+.dark-glass .btn {
+	 display: inline-block;
+	 font-family: "Raleway", "Ariel", sans-serif;
+	 font-size: 14px;
+	 font-weight: 700;
+	 text-transform: uppercase;
+	 color: #f9fafe;
+	 padding: 1% 3%;
+	 border-radius: 5px;
+	 margin-top: 5%;
+	 margin-bottom: 7%;
+	 background: #e7434e;
 
+}
+@media screen and (max-width: 970px){
+	.dark-glass .btn {
+		font-size: 10px;
+	}
+}
+@media screen and (max-width: 750px){
+	.dark-glass .btn {
+		font-size: 8px;
+	}
+}
+@media screen and (max-width: 550px){
+	.dark-glass .btn {
+		font-size: 6px;
+	}
+}
+.text-content {
+	position: absolute;
+	display: inline-block;
+	top: 20%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.bottom {
+	max-width: 1170px;
+	/*width: 100%;*/
+	margin-left: auto;
+	margin-right: auto;
+}
+.image-boats {
+	 overflow: hidden;
+}
+.image-boats li {
+	 float: left;
+	 padding: 1% 1%;
+}
+.image-boats li:first-child,
+.image-boats li:nth-child(3) {
+	 padding-left: 0;
+}
+.image-boats li:last-child,
+.image-boats li:nth-child(2) {
+	 padding-right: 0;
+}
+.featured {
+	 padding-top: 6%;
+}
+.featured h1 {
+	font-family: "Raleway", "Ariel", sans-serif;
+	font-size: 30px;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: #343435;
+	margin-bottom: 1%;
+}
+@media screen and (max-width: 750px){
+	.featured h1 {
+		font-size: 15px;
+	}
+}
+.featured p {
+	font-family: "Raleway", "Ariel", sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: #717171;
+	margin-bottom: 6%;
+}
+@media screen and (max-width: 750px){
+	.featured p {
+		font-size: 10px;
+	}
+}
+.featured .btn {
+	display: inline-block;
+	font-family: "Raleway", "Ariel", sans-serif;
+	font-size: 14px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #343434;
+	border: 1px solid #bdbdbd;
+	padding: 2% 4%;
+	border-radius: 5px;
+	margin-top: 5%;
+	margin-bottom: 7%;
+}
 
-
-
-
-@media screen and (max-width: 1300px){
+@media screen and (max-width: 1200px){
 	.container-top {
 		padding: 0 10px;
 	}
+}
+footer {
+	width: 100%;
+	background: #404040;
+	padding-top: 2%;
+}
+.cord {
+	top: 0;
+	height: 6px;
+	background: url("../images/cord.jpg") center no-repeat;
+	background-size: cover;
+}
+footer section {
+	float: left;
+	font-family: "Raleway", "Ariel", sans-serif;
+	font-size: 14px;
+	line-height: 22px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #ffffff;
+	text-align: left;
+}
+@media screen and (max-width: 750px){
+	footer .s-2,
+	footer .s-3,
+	footer .s-5 {
+		width: 50%;
+	}
+}
+footer section h1 {
+	font-family: "Raleway", "Ariel", sans-serif;
+	font-size: 14px;
+	line-height: 22px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #ffffff;
+	margin-bottom: 1%;
+}
+/*footer .newletter h1 {
+	margin-bottom: 2%;
+}*/
+.featured-boats {
+	padding-left: 2%;
+}
+@media screen and (max-width: 750px){
+	.featured-boats {
+	margin-bottom: 5%;
+	}
+}
+footer .footer-ul li {
+	margin-bottom: 1%;
+}
+.footer-ul a {
+	font-family: "Open-Sans", "Ariel", sans-serif;
+	font-size: 14px;
+	line-height: 34px;
+	font-weight: 400;
+	color: #ffffff;
+	text-transform: lowercase;
+	text-align: left;
+}
+.newletter input {
+	width: 50%;
+	padding: 2% 3%;
+	font-family: "Open Sans", "Ariel", sana-serif;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 22px;
+	color: #717171;
+	text-transform: uppercase;
+	border: 0;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border: 0;
+	margin-right: -4px;
+}
+@media screen and (max-width: 750px){
+	.newletter input {
+		width:95%;
+		display: block;
+	  padding: 1% 1%;
+	}
+}
+.newletter .your-email {
+	 width: 100%;
+	 /*padding-top: 2%;*/
+	 margin-bottom: 20;
+}
+.newletter .dispatch {
+	width: 25%;
+	padding: 2% 0;
+	font-family: "Open Sans", "Ariel", sana-serif;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 22px;
+	color: #ffffff;
+	text-transform: uppercase;
+	border: 0;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border: 0;
+	background: #e7434e;
+}
+@media screen and (max-width: 750px){
+	.newletter .dispatch {
+		width:50%;
+		display: block;
+	  padding: 1% 1%;
+	}
+}
+.dispatch::before {
+	 display: none;
+}
+.soc-buttons {
+	 margin-top: 5%;
+}
+.soc-buttons a{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: 0 2%;
+    font-size: 0;
+    vertical-align: top;
+    text-decoration: none;
+		border-radius: 50%;
+    transition: background-position 0.5s,
+    background-color 0.5s;
+    background: #717171 url("../images/sprite.png") no-repeat center;
+}
+.soc-buttons .btn-f {
+	background-position: -1px -4px;
+}
+.soc-buttons .btn-tw {
+	background-position: -5px -97px;
+}
+.soc-buttons .btn-g {
+	background-position: -5px -52px;
+}
+.sprite {
+    background-image: url("../images/sprite.png");
+    background-repeat: no-repeat;
+    display: block;
+}
+
+ {
+    /*width: 10px;
+    height: 20px;*/
+    background-position: -15px -15px;
+}
+
+.sprite-icon-google_ {
+    width: 22px;
+    height: 14px;
+    background-position: -15px -65px;
+}
+
+.sprite-icon-twitter {
+    width: 22px;
+    height: 17px;
+    background-position: -15px -109px;
 }
