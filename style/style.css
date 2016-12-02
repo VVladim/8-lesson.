@@ -449,6 +449,11 @@ middle {
 .top-destinations {
 	 margin-top: 15%;
 }
+@media (max-width: 750px){
+	.top-destinations {
+		margin-top: 20%;
+	}
+}
 .top-destinations h1{
 	 font-family: "Raleway", "Ariel", sans-serif;
 	 font-size: 30px;
@@ -481,7 +486,55 @@ middle {
 .image-destination li:nth-child(2) .img-boat {
 	 padding-right: 0;
 }
-
+@media (max-width: 750px){
+	.image-destination li {
+		float: none;
+		width: 100%;
+	}
+}
+.image-destination li {
+	 /*position: relative;*/
+}
+.image-destination .number-card {
+	position: absolute;
+	top: 10%;
+	left: 40px;
+	padding: 0 10px;
+	padding-left: 50px;
+	font-family: "Open Sans", "Ariel", sans-serif;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 45px;
+	color: #ffffff;
+	background: #e7434e;
+	border-radius: 5px;
+}
+.image-destination .number-card::before {
+	content: "";
+  position: absolute;
+  top: 14px;
+  left: 24px;
+  width: 16px;
+  height: 16px;
+  background: url("../images/sailboat.png");
+  background-repeat: no-repeat;
+}
+.image-destination li .port {
+	position: absolute;
+  bottom: 15%;
+	left: 40px;
+	font-family: "Raleway", "Ariel", sans-serif;
+	font-size: 34px;
+	color: #ffffff;
+}
+.image-destination li .country {
+	position: absolute;
+	bottom: 5%;
+	left: 40px;
+	font-family: "Raleway", "Ariel", sans-serif;
+	font-size: 25px;
+	color: #ffffff;
+}
 .top-destinations .btn {
 	 display: inline-block;
 	 font-family: "Raleway", "Ariel", sans-serif;
@@ -598,20 +651,78 @@ middle {
 	 overflow: hidden;
 }
 .image-boats li {
+	position: relative;
 	 float: left;
-	 padding: 1% 1%;
+	 padding: 1%;
 }
-.image-boats li:first-child,
-.image-boats li:nth-child(3) {
-	 padding-left: 0;
+@media (max-width: 750px){
+	.image-boats li {
+		float: none;
+		width: 100%;
+	}
 }
-.image-boats li:last-child,
-.image-boats li:nth-child(2) {
-	 padding-right: 0;
+.image-boats .price-card {
+	position: absolute;
+	top: 10%;
+	left: 45px;
+	font-family: "Open Sans", "Ariel", sans-serif;
+	font-size: 14px;
+	font-weight: 700;
+	color: #ffffff;
+	padding: 2% 2%;
+	background: #e7434e;
+	border-radius: 5px;
+}
+.image-boats .boat-name {
+	position: absolute;
+	bottom: 18%;
+	left: 45px;
+	font-family: "Raleway", "Ariel", sans-serif;
+	font-size: 30px;
+	font-weight: 400;
+	color: #ffffff;
+}
+.image-boats .calculation {
+	width: 370px;
+	position: absolute;
+	bottom: 10%;
+	left: 45px;
+	font-family: "Raleway", "Ariel", sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	color: #ffffff;
+	overflow: hidden;
+}
+.image-boats .point-map {
+	position: relative;
+	padding-left: 6%;
+}
+.image-boats .point-map::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 14px;
+	height: 17px;
+	background: url("../images/map-marker.png");
+}
+.image-boats .amounts-berths {
+	position: relative;
+	padding-left: 14%;
+}
+.image-boats .amounts-berths::before {
+	content: "";
+	position: absolute;
+	top: 2px;
+  left: 19px;
+	width: 22px;
+	height: 14px;
+	background: url("../images/account-multiple.png");
 }
 .featured {
 	 padding-top: 6%;
 }
+
 .featured h1 {
 	font-family: "Raleway", "Ariel", sans-serif;
 	font-size: 30px;
@@ -677,12 +788,31 @@ footer section {
 	text-transform: uppercase;
 	color: #ffffff;
 	text-align: left;
+	padding-bottom: 5%;
 }
 @media screen and (max-width: 750px){
-	footer .s-2,
-	footer .s-3,
-	footer .s-5 {
-		width: 50%;
+	footer .top-locations,
+	footer .featured-boats,
+	footer .newletter,
+	footer .contacts {
+		float: none;
+		display: inline-block;
+		vertical-align: top;
+		width: 45%;
+		text-align: left;
+		padding-left: 10%;
+	}
+}
+@media screen and (max-width: 440px){
+	footer .top-locations,
+	footer .featured-boats,
+	footer .newletter,
+	footer .contacts {
+		width: 100%;
+		text-align: center;
+		padding-bottom: 10%;
+		padding-top: 10%;
+
 	}
 }
 footer section h1 {
@@ -739,9 +869,17 @@ footer .footer-ul li {
 	  padding: 1% 1%;
 	}
 }
+@media screen and (max-width: 440px){
+	.newletter input {
+		width:70%;
+		display: inline-block;
+		font-size: 12px;
+		text-align: center;
+
+	}
+}
 .newletter .your-email {
 	 width: 100%;
-	 /*padding-top: 2%;*/
 	 margin-bottom: 20;
 }
 .newletter .dispatch {
@@ -761,9 +899,21 @@ footer .footer-ul li {
 }
 @media screen and (max-width: 750px){
 	.newletter .dispatch {
-		width:50%;
-		display: block;
+		width: 55%;
+		display: inline-block;;
 	  padding: 1% 1%;
+		margin-left: 50%;
+		transform: translateX(-50%);
+	}
+}
+@media screen and (max-width: 440px){
+	.newletter .dispatch {
+		width: 25%;
+		display: inline-block;
+		text-align: center;
+		margin-left: 0;
+		font-size: 10px;
+
 	}
 }
 .dispatch::before {
