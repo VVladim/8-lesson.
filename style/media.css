@@ -1,9 +1,20 @@
-@media (max-width: 550px){
+@media (max-width: 600px){
 	nav ul {
 		display: none;
 	}
 }
-@media screen and (max-width: 750px){
+@media (max-width: 600px){
+	.menu-button {
+		display: block;
+    border: none;
+	}
+}
+@media screen and (min-width: 650px){
+	nav .select-boat {
+		display: block !important;
+	}
+}
+@media screen and (man-width: 750px){
 	nav .menu-btn {
     font-size: 12px;
 		padding: 5px 18px;
@@ -13,6 +24,11 @@
 	.select-boat li a {
     font-size: 12px;
 		margin-right: 15px;
+	}
+}
+@media screen and (max-width: 600px){
+	.block-reserv {
+		top: 60%
 	}
 }
 @media screen and (max-width: 970px){
@@ -99,12 +115,8 @@
 		font-size: 12px;
 	}
 }
-@media (max-width: 550px){
-	.menu-button {
-		display: block;
-	}
-}
-@media (max-width: 550px){
+
+@media (max-width: 600px){
 	.select-boat  {
 		position: absolute;
 		top: 80px;
@@ -113,7 +125,7 @@
 		text-align: left;
 	}
 }
-@media (max-width: 550px){
+@media (max-width: 600px){
 	.select-boat li {
 		display: block;
 	}
