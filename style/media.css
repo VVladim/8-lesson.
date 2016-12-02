@@ -1,0 +1,268 @@
+@media (max-width: 550px){
+	nav ul {
+		display: none;
+	}
+}
+@media screen and (max-width: 750px){
+	nav .menu-btn {
+    font-size: 12px;
+		padding: 5px 18px;
+	}
+}
+@media screen and (max-width: 750px){
+	.select-boat li a {
+    font-size: 12px;
+		margin-right: 15px;
+	}
+}
+@media screen and (max-width: 970px){
+	.block-reserv .title {
+		font-size: 50px;
+		letter-spacing: 3px;
+	}
+}
+@media screen and (max-width: 750px){
+	.block-reserv .title {
+		font-size: 30px;
+		letter-spacing: normal;
+	}
+}
+@media screen and (max-width: 375px){
+	.block-reserv .title {
+		font-size: 15px;
+		letter-spacing: normal;
+	}
+}
+@media screen and (max-width: 970px){
+	.block-reserv p {
+		font-size: 20px;
+		word-spacing: 5px;
+	}
+}
+@media screen and (max-width: 750px){
+	.block-reserv p {
+		font-size: 14px;
+		word-spacing: normal;
+	}
+}
+@media screen and (max-width: 375px){
+	.block-reserv p {
+		font-size: 10px;
+		word-spacing: normal;
+	}
+}
+@media screen and (max-width: 970px){
+	.find-boat input {
+    width: 470px;
+	}
+}
+@media screen and (max-width: 750px){
+	.find-boat input {
+    width: 230px;
+		padding: 10px 30px;
+	}
+}
+@media screen and (max-width: 375px){
+	.find-boat input {
+    width: 170px;
+		padding: 5px 20px;
+		font-size: 12px;
+	}
+}
+@media screen and (max-width: 970px){
+	.find-boat button {
+    width: 150px;
+	}
+}
+@media (max-width: 970px){
+	.find-boat button::before {
+		display: block;
+     left: 10px;
+	}
+}
+@media screen and (max-width: 750px){
+	.find-boat button {
+		width: 120px;
+    padding: 10px 15px;
+    /*font-size: 14px;*/
+	}
+}
+@media (max-width: 750px){
+	.find-boat button::before {
+		display: none;
+	}
+}
+@media screen and (max-width: 375px){
+	.find-boat button {
+    width: 80px;
+		padding: 5px 0;
+		font-size: 12px;
+	}
+}
+@media (max-width: 550px){
+	.menu-button {
+		display: block;
+	}
+}
+@media (max-width: 550px){
+	.select-boat  {
+		position: absolute;
+		top: 80px;
+		right: 10px;
+		/*background: blue;*/
+		text-align: left;
+	}
+}
+@media (max-width: 550px){
+	.select-boat li {
+		display: block;
+	}
+}
+@media (max-width: 550px){
+	.item-price .price {
+		font-size: 20px;
+	}
+}
+@media (max-width: 550px){
+	.item-price .name-price {
+		font-size: 12px;
+	}
+}
+@media screen and (max-width: 970px){
+	.container {
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+}
+@media (max-width: 750px){
+	.top-destinations {
+		margin-top: 20%;
+	}
+}
+@media (max-width: 750px){
+	.image-destination li {
+		float: none;
+		width: 100%;
+	}
+}
+@media screen and (max-width: 970px){
+	.dark-glass h1 {
+		font-size: 50px;
+	}
+}
+@media screen and (max-width: 750px){
+	.dark-glass h1 {
+		font-size: 40px;
+	}
+}
+@media screen and (max-width: 550px){
+	.dark-glass h1 {
+		font-size: 20px;
+	}
+}
+@media screen and (max-width: 970px){
+	.dark-glass p {
+		font-size: 24px;
+	}
+}
+@media screen and (max-width: 750px){
+	.dark-glass p {
+		font-size: 18px;
+	}
+}
+@media screen and (max-width: 550px){
+	.dark-glass p {
+		font-size: 8px;
+	}
+}
+@media screen and (max-width: 970px){
+	.dark-glass .btn {
+		font-size: 10px;
+	}
+}
+@media screen and (max-width: 750px){
+	.dark-glass .btn {
+		font-size: 8px;
+	}
+}
+@media screen and (max-width: 550px){
+	.dark-glass .btn {
+		font-size: 6px;
+	}
+}
+@media (max-width: 750px){
+	.image-boats li {
+		float: none;
+		width: 100%;
+	}
+}
+@media screen and (max-width: 750px){
+	.featured p {
+		font-size: 10px;
+	}
+}
+@media screen and (max-width: 1200px){
+	.container-top {
+		padding: 0 10px;
+	}
+}
+@media screen and (max-width: 750px){
+	footer .top-locations,
+	footer .featured-boats,
+	footer .newletter,
+	footer .contacts {
+		float: none;
+		display: inline-block;
+		vertical-align: top;
+		width: 45%;
+		text-align: left;
+		padding-left: 10%;
+	}
+}
+@media screen and (max-width: 440px){
+	footer .top-locations,
+	footer .featured-boats,
+	footer .newletter,
+	footer .contacts {
+		width: 100%;
+		text-align: center;
+		padding-bottom: 10%;
+		padding-top: 10%;
+
+	}
+}
+@media screen and (max-width: 750px){
+	.newletter input {
+		width:95%;
+		display: block;
+	  padding: 1% 1%;
+	}
+}
+@media screen and (max-width: 440px){
+	.newletter input {
+		width:70%;
+		display: inline-block;
+		font-size: 12px;
+		text-align: center;
+
+	}
+}
+@media screen and (max-width: 750px){
+	.newletter .dispatch {
+		width: 55%;
+		display: inline-block;;
+	  padding: 1% 1%;
+		margin-left: 50%;
+		transform: translateX(-50%);
+	}
+}
+@media screen and (max-width: 440px){
+	.newletter .dispatch {
+		width: 25%;
+		display: inline-block;
+		text-align: center;
+		margin-left: 0;
+		font-size: 10px;
+
+	}
+}

@@ -146,11 +146,7 @@ header {
 nav {
 	/*display: none;*/
 }
-@media (max-width: 550px){
-	nav ul {
-		display: none;
-	}
-}
+
 .select-boat li {
 	 display: inline-block;
 	 font-family: "Raleway", "Ariel", sana-serif;
@@ -167,12 +163,7 @@ nav .menu-btn {
 	border: 1px solid #f3f5fd;
 	text-transform: uppercase;
 }
-@media screen and (max-width: 750px){
-	nav .menu-btn {
-    font-size: 12px;
-		padding: 5px 18px;
-	}
-}
+
 .select-boat li a {
 	font-family: "Raleway", "Ariel", sana-serif;
 	font-size: 16px;
@@ -180,12 +171,6 @@ nav .menu-btn {
 	text-transform: uppercase;
 	margin-right: 40px;
 	margin-right: 32px;
-}
-@media screen and (max-width: 750px){
-	.select-boat li a {
-    font-size: 12px;
-		margin-right: 15px;
-	}
 }
 .block-reserv {
 	position: absolute;
@@ -203,25 +188,6 @@ nav .menu-btn {
 	color: #f3f5fd;
 	letter-spacing: 5px;
 }
-@media screen and (max-width: 970px){
-	.block-reserv .title {
-		font-size: 50px;
-		letter-spacing: 3px;
-	}
-}
-@media screen and (max-width: 750px){
-	.block-reserv .title {
-		font-size: 30px;
-		letter-spacing: normal;
-	}
-}
-@media screen and (max-width: 375px){
-	.block-reserv .title {
-		font-size: 15px;
-		letter-spacing: normal;
-	}
-}
-
 
 .block-reserv p {
 	margin-bottom: 90px;
@@ -232,24 +198,7 @@ nav .menu-btn {
 	text-transform: uppercase;
 	word-spacing: 10px;
 }
-@media screen and (max-width: 970px){
-	.block-reserv p {
-		font-size: 20px;
-		word-spacing: 5px;
-	}
-}
-@media screen and (max-width: 750px){
-	.block-reserv p {
-		font-size: 14px;
-		word-spacing: normal;
-	}
-}
-@media screen and (max-width: 375px){
-	.block-reserv p {
-		font-size: 10px;
-		word-spacing: normal;
-	}
-}
+
 .find-boat {
 	display: inline-block;
 }
@@ -268,24 +217,7 @@ nav .menu-btn {
 	border: 0;
 	margin-right: -4px;
 }
-@media screen and (max-width: 970px){
-	.find-boat input {
-    width: 470px;
-	}
-}
-@media screen and (max-width: 750px){
-	.find-boat input {
-    width: 230px;
-		padding: 10px 30px;
-	}
-}
-@media screen and (max-width: 375px){
-	.find-boat input {
-    width: 170px;
-		padding: 5px 20px;
-		font-size: 12px;
-	}
-}
+
 .find-boat button {
 	position: relative;
 	 width: 200px;
@@ -311,36 +243,7 @@ nav .menu-btn {
 	 background: url("../images/sailboat.png");
 	 background-repeat: no-repeat;
 }
-@media screen and (max-width: 970px){
-	.find-boat button {
-    width: 150px;
-	}
-}
-@media (max-width: 970px){
-	.find-boat button::before {
-		display: block;
-     left: 10px;
-	}
-}
-@media screen and (max-width: 750px){
-	.find-boat button {
-		width: 120px;
-    padding: 10px 15px;
-    /*font-size: 14px;*/
-	}
-}
-@media (max-width: 750px){
-	.find-boat button::before {
-		display: none;
-	}
-}
-@media screen and (max-width: 375px){
-	.find-boat button {
-    width: 80px;
-		padding: 5px 0;
-		font-size: 12px;
-	}
-}
+
 .menu-button{
 	display: none;
 }
@@ -364,25 +267,7 @@ nav .menu-btn {
 	 background: #fff;
 
 }
-@media (max-width: 550px){
-	.menu-button {
-		display: block;
-	}
-}
-@media (max-width: 550px){
-	.select-boat  {
-		position: absolute;
-		top: 80px;
-		right: 10px;
-		/*background: blue;*/
-		text-align: left;
-	}
-}
-@media (max-width: 550px){
-	.select-boat li {
-		display: block;
-	}
-}
+
 .base-prices {
 	max-width: 1170px;
 	width: 100%;
@@ -413,22 +298,14 @@ nav .menu-btn {
 	color: #343434;
 	margin-bottom: 5px;
 }
-@media (max-width: 550px){
-	.item-price .price {
-		font-size: 20px;
-	}
-}
+
 .item-price .name-price {
 	font-family: "Open Sans", "Ariel", sans-serif;
 	font-size: 18px;
   font-weight: 400;
 	color: #717171;
 }
-@media (max-width: 550px){
-	.item-price .name-price {
-		font-size: 12px;
-	}
-}
+
 .container {
 	max-width: 1170px;
 	/*width: 100%;*/
@@ -436,12 +313,7 @@ nav .menu-btn {
 	margin-right: auto;
 	min-height: 100px;
 }
-@media screen and (max-width: 970px){
-	.container {
-		padding-left: 5px;
-		padding-right: 5px;
-	}
-}
+
 middle {
 	background: #ffffff;
 	overflow: hidden;
@@ -449,11 +321,7 @@ middle {
 .top-destinations {
 	 margin-top: 15%;
 }
-@media (max-width: 750px){
-	.top-destinations {
-		margin-top: 20%;
-	}
-}
+
 .top-destinations h1{
 	 font-family: "Raleway", "Ariel", sans-serif;
 	 font-size: 30px;
@@ -486,12 +354,7 @@ middle {
 .image-destination li:nth-child(2) .img-boat {
 	 padding-right: 0;
 }
-@media (max-width: 750px){
-	.image-destination li {
-		float: none;
-		width: 100%;
-	}
-}
+
 .image-destination li {
 	 /*position: relative;*/
 }
@@ -568,21 +431,7 @@ middle {
 	color: #f9fafe;
 	width:255vh;
 }
-@media screen and (max-width: 970px){
-	.dark-glass h1 {
-		font-size: 50px;
-	}
-}
-@media screen and (max-width: 750px){
-	.dark-glass h1 {
-		font-size: 40px;
-	}
-}
-@media screen and (max-width: 550px){
-	.dark-glass h1 {
-		font-size: 20px;
-	}
-}
+
 .dark-glass p {
 	font-family: "Open Sans", "Ariel", sans-serif;
 	font-size: 30px;
@@ -590,21 +439,7 @@ middle {
 	text-transform: uppercase;
 	color: #f9fafe;
 }
-@media screen and (max-width: 970px){
-	.dark-glass p {
-		font-size: 24px;
-	}
-}
-@media screen and (max-width: 750px){
-	.dark-glass p {
-		font-size: 18px;
-	}
-}
-@media screen and (max-width: 550px){
-	.dark-glass p {
-		font-size: 8px;
-	}
-}
+
 .dark-glass .btn {
 	 display: inline-block;
 	 font-family: "Raleway", "Ariel", sans-serif;
@@ -619,21 +454,7 @@ middle {
 	 background: #e7434e;
 
 }
-@media screen and (max-width: 970px){
-	.dark-glass .btn {
-		font-size: 10px;
-	}
-}
-@media screen and (max-width: 750px){
-	.dark-glass .btn {
-		font-size: 8px;
-	}
-}
-@media screen and (max-width: 550px){
-	.dark-glass .btn {
-		font-size: 6px;
-	}
-}
+
 .text-content {
 	position: absolute;
 	display: inline-block;
@@ -655,12 +476,7 @@ middle {
 	 float: left;
 	 padding: 1%;
 }
-@media (max-width: 750px){
-	.image-boats li {
-		float: none;
-		width: 100%;
-	}
-}
+
 .image-boats .price-card {
 	position: absolute;
 	top: 10%;
@@ -744,11 +560,7 @@ middle {
 	color: #717171;
 	margin-bottom: 6%;
 }
-@media screen and (max-width: 750px){
-	.featured p {
-		font-size: 10px;
-	}
-}
+
 .featured .btn {
 	display: inline-block;
 	font-family: "Raleway", "Ariel", sans-serif;
@@ -763,11 +575,7 @@ middle {
 	margin-bottom: 7%;
 }
 
-@media screen and (max-width: 1200px){
-	.container-top {
-		padding: 0 10px;
-	}
-}
+
 footer {
 	width: 100%;
 	background: #404040;
@@ -790,31 +598,7 @@ footer section {
 	text-align: left;
 	padding-bottom: 5%;
 }
-@media screen and (max-width: 750px){
-	footer .top-locations,
-	footer .featured-boats,
-	footer .newletter,
-	footer .contacts {
-		float: none;
-		display: inline-block;
-		vertical-align: top;
-		width: 45%;
-		text-align: left;
-		padding-left: 10%;
-	}
-}
-@media screen and (max-width: 440px){
-	footer .top-locations,
-	footer .featured-boats,
-	footer .newletter,
-	footer .contacts {
-		width: 100%;
-		text-align: center;
-		padding-bottom: 10%;
-		padding-top: 10%;
 
-	}
-}
 footer section h1 {
 	font-family: "Raleway", "Ariel", sans-serif;
 	font-size: 14px;
@@ -862,22 +646,7 @@ footer .footer-ul li {
 	border: 0;
 	margin-right: -4px;
 }
-@media screen and (max-width: 750px){
-	.newletter input {
-		width:95%;
-		display: block;
-	  padding: 1% 1%;
-	}
-}
-@media screen and (max-width: 440px){
-	.newletter input {
-		width:70%;
-		display: inline-block;
-		font-size: 12px;
-		text-align: center;
 
-	}
-}
 .newletter .your-email {
 	 width: 100%;
 	 margin-bottom: 20;
@@ -897,25 +666,7 @@ footer .footer-ul li {
 	border: 0;
 	background: #e7434e;
 }
-@media screen and (max-width: 750px){
-	.newletter .dispatch {
-		width: 55%;
-		display: inline-block;;
-	  padding: 1% 1%;
-		margin-left: 50%;
-		transform: translateX(-50%);
-	}
-}
-@media screen and (max-width: 440px){
-	.newletter .dispatch {
-		width: 25%;
-		display: inline-block;
-		text-align: center;
-		margin-left: 0;
-		font-size: 10px;
 
-	}
-}
 .dispatch::before {
 	 display: none;
 }
@@ -950,7 +701,7 @@ footer .footer-ul li {
     display: block;
 }
 
- {
+ .sprite-icon-facebook {
     /*width: 10px;
     height: 20px;*/
     background-position: -15px -15px;
