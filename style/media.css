@@ -9,7 +9,7 @@
     border: none;
 	}
 }
-@media screen and (min-width: 650px){
+@media screen and (min-width: 600px){
 	nav .select-boat {
 		display: block !important;
 	}
@@ -27,10 +27,11 @@
 	}
 }
 @media screen and (max-width: 600px){
-	.block-reserv {
-		top: 60%
+	header {
+	 margin-bottom: 50%;
 	}
 }
+
 @media screen and (max-width: 970px){
 	.block-reserv .title {
 		font-size: 50px;
@@ -148,7 +149,7 @@
 }
 @media (max-width: 750px){
 	.top-destinations {
-		margin-top: 20%;
+		margin-top: 15%;
 	}
 }
 @media (max-width: 750px){

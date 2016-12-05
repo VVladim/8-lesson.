@@ -116,6 +116,7 @@ body {
 	 padding-top: 220px;
 }
 	.wrapper {
+		max-width; 1200px;
  min-height: calc(100% - 320px);
 }
 /*.wrapper::after {
@@ -127,18 +128,19 @@ section{
 }
 .welcome-section {
 	position: relative;
-	height: 100vh;
+	height: 85%;
 	background: url("../images/header-background.jpg") center no-repeat;
- background-size: cover;
+  background-size: cover;
 }
 .container-top {
 	max-width: 1200px;
-	width: 100%;
+	/*width: 100%;*/
 	margin-left: auto;
 	margin-right: auto;
 }
 header {
  padding-top: 38px;
+ margin-bottom: 15%;
 }
  .logo {
 
@@ -174,30 +176,30 @@ nav .menu-btn {
 	margin-right: 32px;
 }
 .block-reserv {
-	position: absolute;
-	top: 20%;
-	left: 50%;
-	transform: translateX(-50%);
-
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+  margin-bottom: 5%;
 }
 .block-reserv .title {
-	width: 910px;
 	font-family: "Raleway", "Ariel", sana-serif;
 	font-size: 72px;
 	font-weight: 700;
 	text-transform: uppercase;
 	color: #f3f5fd;
 	letter-spacing: 5px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .block-reserv p {
-	margin-bottom: 15%;
 	font-family: "Open Sans", "Ariel", sana-serif;
 	font-size: 30px;
 	font-weight: 400;
 	color: #f3f5fd;
 	text-transform: uppercase;
 	word-spacing: 10px;
+	  margin-bottom: 10%;
 }
 
 .find-boat {
@@ -270,16 +272,19 @@ nav .menu-btn {
 }
 
 .base-prices {
-	max-width: 1170px;
-	width: 100%;
-	position: absolute;
-	bottom: -55px;
-	left: 50%;
-	transform: translateX(-50%);
-	background: #ffffff;
+	position: relative;
+	top: 70px;
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	background: lightgray;
 	padding: 30px 0;
-	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	box-shadow: rgba(0, 0, 0, 0.5);
+
+
+
 }
 .base-prices li {
 	 float: left;
@@ -308,11 +313,12 @@ nav .menu-btn {
 }
 
 .container {
-	max-width: 1170px;
-	/*width: 100%;*/
+	position: relative;
+	max-width: 1200px;
 	margin-left: auto;
 	margin-right: auto;
 	min-height: 100px;
+	padding: 0 1px;
 }
 
 middle {
@@ -320,7 +326,7 @@ middle {
 	overflow: hidden;
 }
 .top-destinations {
-	 margin-top: 15%;
+	 padding-top: 15%;
 }
 
 .top-destinations h1{
@@ -342,19 +348,18 @@ middle {
     position: relative;
     max-height: 360px;
     overflow: hidden;
-    padding: 1% 1%;
-    margin-bottom: 1%;
-    border-radius: 20px;
+    padding: 20px 10px;
+    border-radius: 30px;
 }
 
-.image-destination li:first-child .img-boat,
+/*.image-destination li:first-child .img-boat,
 .image-destination li:nth-child(3) .img-boat {
 	 padding-left: 0;
 }
 .image-destination li:last-child .img-boat,
 .image-destination li:nth-child(2) .img-boat {
 	 padding-right: 0;
-}
+}*/
 
 .image-destination li {
 	 /*position: relative;*/
@@ -420,9 +425,14 @@ middle {
 }
 .dark-glass {
 	position: relative;
-	height: 75vh;
 	background: url("../images/dark-glass.png") center no-repeat;
 	background-size: cover;
+}
+.text-content {
+	max-width: 1200px;
+	max-height: 15%;
+	margin-left: auto;
+	margin-right: auto;
 }
 .dark-glass h1 {
 	font-family: "Raleway", "Ariel", sans-serif;
@@ -430,7 +440,7 @@ middle {
 	font-weight: 700;
 	text-transform: uppercase;
 	color: #f9fafe;
-	width:255vh;
+	padding-top: 15%;
 }
 
 .dark-glass p {
@@ -456,13 +466,13 @@ middle {
 
 }
 
-.text-content {
+/*.text-content {
 	position: absolute;
 	display: inline-block;
 	top: 20%;
 	left: 50%;
 	transform: translateX(-50%);
-}
+}*/
 .bottom {
 	max-width: 1170px;
 	/*width: 100%;*/
@@ -580,14 +590,8 @@ middle {
 footer {
 	width: 100%;
 	background: #404040;
-	padding-top: 2%;
 }
-.cord {
-	top: 0;
-	height: 6px;
-	background: url("../images/cord.jpg") center no-repeat;
-	background-size: cover;
-}
+
 footer section {
 	float: left;
 	font-family: "Raleway", "Ariel", sans-serif;
@@ -599,7 +603,18 @@ footer section {
 	text-align: left;
 	padding-bottom: 5%;
 }
-
+footer::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 4px;
+	background: url("../images/cord.png");
+	background-repeat: repeat-x;
+	background-position: center;
+}
+footer .container {
+	 padding-top: 2%;
+}
 footer section h1 {
 	font-family: "Raleway", "Ariel", sans-serif;
 	font-size: 14px;
